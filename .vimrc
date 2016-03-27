@@ -99,7 +99,8 @@ call neobundle#end()
 " Required:
 filetype plugin on
 
-colorscheme hybrid
+set background=dark
+colorscheme darkblue 
 
 "autocmd FileType php :set dictionary=~/.vim/dict/php.dict
 highlight Pmenu ctermbg=4

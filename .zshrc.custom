@@ -47,8 +47,8 @@ case ${UID} in
     #
     # Prompt
     #
-    PROMPT='🍣  %{$fg_bold[blue]%}${USER}@%m ${RESET}${WHITE}${POH} ${RESET}'
-    RPROMPT='${RESET}${WHITE}[${BLUE}%(5~,%-2~/.../%2~,%~)% ${WHITE}]${RESET}'
+    PROMPT='🍣  %{$fg_bold[cyan]%}${USER}@%m ${RESET}${WHITE}${POH} ${RESET}'
+    RPROMPT='${RESET}${WHITE}[${cyan}%(5~,%-2~/.../%2~,%~)% ${WHITE}]${RESET}'
 
     # show status of git pushed to HEAD in prompt
     function _git_not_pushed()
@@ -99,7 +99,7 @@ case ${UID} in
       echo "[$color$name$action$pushed%f%b]"
     }
 
-    RPROMPT='`rprompt-git-current-branch`${RESET}${WHITE}[${BLUE}%(5~,%-2~/.../%2~,%~)${WHITE}]${RESET}'
+    RPROMPT='`rprompt-git-current-branch`${RESET}${WHITE}[${CYAN}%(5~,%-2~/.../%2~,%~)${WHITE}]${RESET}'
 
     ;;
 esac
