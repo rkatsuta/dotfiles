@@ -641,3 +641,12 @@ esac
 #
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
 
+# anyframe
+fpath=($HOME/anyframe/anyframe(N-/) $fpath)
+
+autoload -Uz anyframe-init
+anyframe-init
+bindkey '^r' anyframe-widget-execute-history
+bindkey '^b' anyframe-widget-insert-git-branch
+
+bindkey "^A" beginning-of-line
