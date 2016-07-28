@@ -38,6 +38,7 @@ plugins=(brew bundler capistrano coffee command-not-found extract gem git git-fl
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+export PATH=$PATH:$HOME/peco/peco_linux_amd64/$
 source $HOME/.zshrc.custom
 
 
